@@ -39,14 +39,21 @@ GEM
       minitest (~> 5.1)
       tzinfo (~> 1.1)
     arel (7.1.4)
+    attr_encrypted (3.0.3)
+      encryptor (~> 3.0.0)
     builder (3.2.3)
     byebug (9.0.6)
     concurrent-ruby (1.0.5)
+    encryptor (3.0.0)
     erubis (2.7.0)
     ffi (1.9.18)
     globalid (0.3.7)
       activesupport (>= 4.1.0)
+    httparty (0.14.0)
+      multi_xml (>= 0.5.2)
     i18n (0.8.1)
+    json (2.0.2)
+    jwt (1.5.6)
     listen (3.0.8)
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
@@ -60,9 +67,11 @@ GEM
     mime-types-data (3.2016.0521)
     mini_portile2 (2.1.0)
     minitest (5.10.1)
+    multi_xml (0.5.5)
     nio4r (2.0.0)
     nokogiri (1.7.0.1)
       mini_portile2 (~> 2.1.0)
+    oauth (0.5.1)
     puma (3.7.1)
     rack (2.0.1)
     rack-test (0.6.3)
@@ -119,8 +128,13 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  attr_encrypted (~> 3.0.0)
   byebug
+  httparty
+  json
+  jwt
   listen (~> 3.0.5)
+  oauth
   puma (~> 3.0)
   rails (~> 5.0.1)
   spring
