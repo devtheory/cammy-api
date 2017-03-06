@@ -45,3 +45,5 @@ gem 'jwt'
 gem "attr_encrypted", "~> 3.0.0"
 gem 'httparty'
 gem 'json'
+gem 'bcrypt'
+gem 'simple_command'

@@ -41,6 +41,7 @@ GEM
     arel (7.1.4)
     attr_encrypted (3.0.3)
       encryptor (~> 3.0.0)
+    bcrypt (3.1.11)
     builder (3.2.3)
     byebug (9.0.6)
     concurrent-ruby (1.0.5)
@@ -103,6 +104,7 @@ GEM
     rb-fsevent (0.9.8)
     rb-inotify (0.9.8)
       ffi (>= 0.5.0)
+    simple_command (0.0.9)
     spring (2.0.1)
       activesupport (>= 4.2)
     spring-watcher-listen (2.0.1)
@@ -129,6 +131,7 @@ PLATFORMS
 
 DEPENDENCIES
   attr_encrypted (~> 3.0.0)
+  bcrypt
   byebug
   httparty
   json
@@ -137,6 +140,7 @@ DEPENDENCIES
   oauth
   puma (~> 3.0)
   rails (~> 5.0.1)
+  simple_command
   spring
   spring-watcher-listen (~> 2.0.0)
   sqlite3
